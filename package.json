@@ -1,28 +1,62 @@
 {
-  "name": "basic-expressjs-server---nodejs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/paulAlexSerban/Basic-ExpressJS-Server---NodeJS.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/paulAlexSerban/Basic-ExpressJS-Server---NodeJS/issues"
-  },
-  "homepage": "https://github.com/paulAlexSerban/Basic-ExpressJS-Server---NodeJS#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^6.0.2"
-  }
+    "name": "@wbk--mern-playground-v2/core",
+    "version": "0.0.0",
+    "author": "paulAlexSerban <paul.alex.serban@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "-": "BUILD - apps",
+        "--": "BUILD - libs",
+        "---": "PROCESS - assets",
+        "----": "DEVELOP - apps",
+        "-----": "TEST",
+        "------": "DEVELOPMENT",
+        "commit": "yarn git-cz",
+        "formats:check": "yarn prettier --check .",
+        "formats:write": "yarn prettier --write .",
+        "prepare": "husky install",
+        "version:packages": "bash tools/build-scripts/version.bash"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^18.6.0",
+        "@commitlint/config-conventional": "^18.6.0",
+        "commitizen": "^4.3.0",
+        "concurrently": "^8.2.2",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^9.0.7",
+        "lerna": "^8.0.2",
+        "prettier": "^3.2.5",
+        "typescript": "^5.2.2",
+        "uuid": "^9.0.1"
+    },
+    "keywords": [],
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "assets/*",
+            "assets/",
+            "backend/*",
+            "backend/**/*",
+            "database/*",
+            "database/**/*",
+            "frontend/*",
+            "frontend/**/*",
+            "shared/*",
+            "shared/**/*",
+            "tools/*"
+        ],
+        "nohoist": [
+            "**/normalize-scss"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    }
 }
