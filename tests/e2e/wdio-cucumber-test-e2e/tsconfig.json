@@ -20,5 +20,6 @@
             "@/*": ["src/*"]
         }
     },
-    "include": ["test", "wdio.conf.ts", "features"]
+    "include": ["test", "wdio.conf.ts", "tests/features"],
+    "exclude": ["node_modules"]
 }
