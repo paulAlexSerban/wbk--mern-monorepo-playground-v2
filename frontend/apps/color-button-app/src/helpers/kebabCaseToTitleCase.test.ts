@@ -22,7 +22,7 @@ describe('kebabCaseToTitleCase', () => {
         expect(kebabCaseToTitleCase('dark-orange-red')).toBe('Dark Orange Red');
     });
 
-    it(' shoould work with one hyphen', () => {
+    it('shoould work with one hyphen', () => {
         expect(kebabCaseToTitleCase('dark-red')).toBe('Dark Red');
     });
 });
