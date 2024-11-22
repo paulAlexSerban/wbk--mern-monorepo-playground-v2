@@ -20,7 +20,7 @@
         "formats:check": "yarn prettier --check .",
         "formats:write": "yarn prettier --write .",
         "prepare": "husky install",
-        "version:packages": "bash tools/build-scripts/version.bash",
+        "version:packages": "bash tools/build-scripts/version-packages.bash",
         "update:dependencies": "yarn upgrade-interactive --latest"
     },
     "devDependencies": {

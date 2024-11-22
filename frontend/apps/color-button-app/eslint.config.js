@@ -27,8 +27,10 @@ export default [
     {
         languageOptions: {
             ecmaVersion: 2020, // eslintrc.js => env: { es2020: true }
-            globals: { ...globals.browser, // eslintrc.js => env: { browser: true }
-                ...pluginVitest.environments.env.globals },
+            globals: {
+                ...globals.browser, // eslintrc.js => env: { browser: true }
+                ...pluginVitest.environments.env.globals,
+            },
         },
     },
     pluginJs.configs.recommended,
