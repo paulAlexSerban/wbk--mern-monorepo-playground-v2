@@ -14,8 +14,9 @@
         "test:coverage": "vitest run --coverage"
     },
     "devDependencies": {
+        "@testing-library/dom": "^10.4.0",
         "@testing-library/jest-dom": "^6.1.4",
-        "@testing-library/react": "^14.0.0",
+        "@testing-library/react": "^16.0.1",
         "@types/jest": "^29.5.14",
         "@types/react": "^18.2.27",
         "@vitejs/plugin-react": "^4.0.3",
@@ -26,7 +27,7 @@
         "react-dom": "^18.2.0",
         "sass": "^1.69.5",
         "typescript": "^5.2.2",
-        "vite": "^4.4.5",
+        "vite": "^5.4.11",
         "vitest": "^2.1.5"
     }
 }
