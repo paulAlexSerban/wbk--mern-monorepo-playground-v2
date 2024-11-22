@@ -49,6 +49,8 @@
             "frontend/**/*",
             "shared/*",
             "shared/**/*",
+            "tests/*",
+            "tests/**/*",
             "tools/*"
         ],
         "nohoist": [

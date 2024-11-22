@@ -1,4 +1,5 @@
 Feature: Demo Feature
+
   @demo
   Scenario Outline: Run first demo feature
     Given DuckDuckGo page is opened
@@ -7,5 +8,5 @@ Feature: Demo Feature
     Then The URL should match <ExpectedURL>
 
     Examples:
-      | TestID     | SearchItem | ExpectedURL          |
-      | DEMO_TC001 | paulserban.eu       | https://paulserban.eu |
+      | TestID     | SearchItem    | ExpectedURL           |
+      | DEMO_TC001 | paulserban.eu | https://paulserban.eu |

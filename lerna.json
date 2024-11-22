@@ -13,6 +13,8 @@
         "frontend/**/*",
         "shared/*",
         "shared/**/*",
+        "tests/*",
+        "tests/**/*",
         "tools/*"
     ],
     "npmClient": "yarn",
