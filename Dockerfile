@@ -1,4 +1,4 @@
-FROM node:20.12.0 as core
+FROM node:22.12-bullseye-slim as core
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app

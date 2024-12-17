@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import { Person as PersonType } from '../types';
 import Person from './Person';
 
@@ -7,12 +7,12 @@ type ListProps = {
 };
 
 // Blocking function
-const blockMainThread = (ms: number) => {
-    const end = Date.now() + ms;
-    while (Date.now() < end) {
-        // Simulates heavy computation
-    }
-};
+// const blockMainThread = (ms: number) => {
+//     const end = Date.now() + ms;
+//     while (Date.now() < end) {
+//         // Simulates heavy computation
+//     }
+// };
 
 const List: FC<ListProps> = ({ people }) => {
     // Trigger the blocking function
