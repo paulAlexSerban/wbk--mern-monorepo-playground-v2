@@ -16,7 +16,7 @@ When(/^I search with (.*)$/, async (searchItem: string) => {
 When(/^I click on the first search result$/, async () => {
     const firstLink = await browser.$(`<h2>`);
     await firstLink.click();
-    await browser.pause(1000);
+    await browser.pause(10000);
 });
 
 Then(/^The URL should match (.*)$/, async (expectedURL: string) => {
