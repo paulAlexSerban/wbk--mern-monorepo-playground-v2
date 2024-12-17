@@ -11,6 +11,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/api', indexRouter);
+app.use('/api/birthdays', indexRouter);
 
 export default app;
