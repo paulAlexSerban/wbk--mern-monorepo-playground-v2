@@ -1,5 +1,6 @@
 Feature: Demo Feature
 
+  @Demo
   Scenario Outline: Run first demo feature
     Given DuckDuckGo page is opened
     When I search with <SearchItem>

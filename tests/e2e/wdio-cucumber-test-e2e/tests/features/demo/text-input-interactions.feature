@@ -1,7 +1,7 @@
-Feature: Web Interactions
+Feature: TextInputInteractions
 
-  @demo
-  Scenario Outline: Form interactions
+  @TextInputInteractions
+  Scenario Outline: Text input interactions
     Given Text inputs page is open
     When Perform text input interactions
     Then The text inputs should be filled
