@@ -1,0 +1,15 @@
+# ----------------- BUILDER STAGE -----------------
+FROM wbk--mern-playground-v2__core:latest as builder
+COPY ./backend/apis/shopping-cart-usereducer-api ./backend/apis/shopping-cart-usereducer-api
+RUN yarn install
+RUN yarn build:shopping-cart-usereducer-api
+
+# ----------------- PRODUCTION STAGE -----------------
+FROM node:22.12-bullseye-slim as service
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY --from=builder /usr/src/app/backend/apis/shopping-cart-usereducer-api/package.json ./
+COPY --from=builder /usr/src/app/backend/apis/shopping-cart-usereducer-api/dist ./dist
+RUN yarn install --production
+
+CMD ["node", "./dist/bin/www.js"]

@@ -1,0 +1,7 @@
+FROM wbk--mern-playground-v2__core:latest as builder
+
+COPY ./backend/apis/shopping-cart-usereducer-api ./backend/apis/shopping-cart-usereducer-api
+
+RUN yarn install
+
+CMD [ "yarn", "develop:shopping-cart-usereducer-api"]
