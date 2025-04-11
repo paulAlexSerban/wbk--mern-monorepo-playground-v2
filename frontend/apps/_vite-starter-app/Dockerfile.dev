@@ -1,4 +1,0 @@
-FROM wbk--mern-playground-v2__core:latest as builder
-COPY ./frontend/apps/_vite-starter-app ./frontend/apps/_vite-starter-app
-RUN yarn install
-CMD [ "yarn", "develop:vite-starter-app"]

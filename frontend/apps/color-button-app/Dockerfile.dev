@@ -1,4 +1,0 @@
-FROM wbk--mern-playground-v2__core:latest as builder
-COPY ./frontend/apps/color-button-app ./frontend/apps/color-button-app
-RUN yarn install
-CMD [ "yarn", "develop:color-button-app"]
