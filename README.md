@@ -6,6 +6,7 @@ clean - ready to reuse
 
 - add several commits
 - push to remote and open PR
+- squash commits and merge
 
 ### features/doe-jane
 
