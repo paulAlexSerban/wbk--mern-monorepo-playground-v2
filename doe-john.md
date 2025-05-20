@@ -6,3 +6,6 @@ skills:
   - Python
   - JavaScript
   - React
+projects:
+  - name: "Open Source Project"
+    description: "Contributed to an open-source project on GitHub."
