@@ -8,3 +8,10 @@ skills:
   - React
   - Node.js
   - Docker
+projects:
+  - name: "Open Source Project"
+    description: "Contributed to an open-source project on GitHub."
+  - name: "Personal Portfolio"
+    description: "Developed a personal portfolio website using React and Node.js."
+  - name: "Weather App"
+    description: "Created a weather application using Python and Flask."
