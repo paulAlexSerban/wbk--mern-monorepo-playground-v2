@@ -15,3 +15,15 @@ clean - ready to reuse
 - get rejected
 - pull develop with rebase
 - push to remote
+
+### features/marry-doe
+- add 2 new commits
+- push to remote and open PR
+- pull develop with rebase
+- try to push to remote
+- get rejected
+- pull develop with rebase
+- push to remote
+- merge to develop with rebase
+- push to remote
+- open PR
